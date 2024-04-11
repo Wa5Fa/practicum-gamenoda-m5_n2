@@ -19,6 +19,8 @@
     "yandex practicum",
     "game_rating",
     "lexpearson",
+    "nodemon",
+    "develop",
     "prettier",
     "commonjs",
     "common js",
@@ -31,6 +33,7 @@
   },
   "homepage": "https://github.com/lexpearson/practicum-gamenoda-m5_n2#readme",
   "devDependencies": {
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "nodemon": "^3.1.0"
   }
 }
