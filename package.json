@@ -1,6 +1,6 @@
 {
   "name": "game_rating",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Rate the games made by students of the Unity course from Yandex Practicum.",
   "private": true,
   "main": "app.js",
@@ -16,13 +16,17 @@
   "keywords": [
     "yandex",
     "practicum",
-    "yandex practicum",
-    "game_rating",
+    "yandex-practicum",
+    "game-rating",
     "wa5fa",
     "prettier",
     "nodemon",
     "commonjs",
-    "yarn"
+    "momentjs",
+    "chalk",
+    "yarn",
+    "mit",
+    "mit-license"
   ],
   "author": "Wa5Fa <wa.5.fa.helper@gmail.com>",
   "license": "MIT",
