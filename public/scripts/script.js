@@ -37,27 +37,21 @@ form.addEventListener("submit", async event => {
     body: JSON.stringify(obj)
   });
   const result = await response.json();
-
   document.querySelector("main").innerHTML = "";
-
   const ul = document.createElement("ul");
   ul.classList.add("box");
-
   const h2 = document.createElement("h2");
   h2.textContent = "Рейтинг игр:";
-
   ul.append(h2);
   result.forEach(element => {
     const li = document.createElement("li");
     li.textContent = `${element.title}: ${element.rating}`;
     ul.append(li);
   });
-
   const button = document.createElement("button");
   button.textContent = "Ещё одна рандомная игра";
   button.classList.add("play-again");
   ul.append(button);
-
   document.querySelector("main").append(ul);
   document.querySelector(".play-again").addEventListener("click", () => {
     location.reload();
@@ -80,7 +74,6 @@ function colorStars(containerSelector) {
   const targetContainer = document.querySelector(containerSelector);
   const stars = targetContainer.querySelectorAll(".star svg");
   const radio = targetContainer.querySelectorAll(".radio");
-
   radio.forEach((el, index) => {
     el.addEventListener("input", () => {
       stars.forEach((star, i) => {
