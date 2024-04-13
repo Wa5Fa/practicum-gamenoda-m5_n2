@@ -1,6 +1,6 @@
 {
   "name": "game_rating",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rate the games made by students of the Unity course from Yandex Practicum.",
   "private": true,
   "main": "app.js",
@@ -11,25 +11,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wa5fa/practicum-gamenoda-m5_n2.git"
+    "url": "git+https://github.com/wa5fa/practicum-gamerating-m5_n2.git"
   },
   "keywords": [
     "yandex",
     "practicum",
     "yandex practicum",
     "game_rating",
-    "lexpearson",
+    "wa5fa",
     "prettier",
+    "nodemon",
     "commonjs",
-    "common js",
     "yarn"
   ],
   "author": "Wa5Fa <wa.5.fa.helper@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wa5fa/practicum-gamenoda-m5_n2/issues"
+    "url": "https://github.com/wa5fa/practicum-gamerating-m5_n2/issues"
   },
-  "homepage": "https://github.com/wa5fa/practicum-gamenoda-m5_n2#readme",
+  "homepage": "https://github.com/wa5fa/practicum-gamerating-m5_n2#readme",
   "dependencies": {
     "chalk": "^5.3.0",
     "moment": "^2.30.1"
