@@ -1,6 +1,6 @@
 {
   "name": "game_rating",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "Rate the games made by students of the Unity course from Yandex Practicum.",
   "private": true,
   "main": "app.js",
