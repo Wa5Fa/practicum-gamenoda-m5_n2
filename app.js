@@ -1,7 +1,6 @@
 const http = require("http");
 const path = require("path");
 const {voteRouteController, mainRouteController, gameRouteController} = require("./controllers/index");
-const {staticFile, mimeTypes} = require("./appModules/http-utils/index");
 const {defaultRouteController} = require("./controllers");
 
 const server = http.createServer((req, res) => {
