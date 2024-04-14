@@ -1,20 +1,20 @@
 @font-face {
+  font-family: "Rubic One";
+  src: url(/fonts/rubic-one.woff) format("woff");
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Anonymous Pro";
-  src: url(/fonts/anonymous_pro-family/anonymouspro-regular.woff2) format("woff2");
+  src: url(/fonts/anonymouspro-regular.woff) format("woff");
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Anonymous Pro";
-  src: url(/fonts/anonymous_pro-family/anonymouspro-bold.woff2) format("woff2");
+  src: url(/fonts/anonymouspro-bold.woff) format("woff");
   font-weight: bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Rubic One";
-  src: url(/fonts/rubic_one-family/rubic-one.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -75,7 +75,6 @@ button {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
-  transition: background .25s ease-out;
 }
 
 dialog {
@@ -216,14 +215,15 @@ button:hover {
 }
 
 .play-again {
-  margin-top: 2em;
+  display: block;
+  margin: 2em auto 0;
 }
 
 @media (width <= 1000px) {
   body {
     font-size: 20px;
   }
-
+  
   .star {
     width: 80px;
   }
@@ -233,11 +233,11 @@ button:hover {
   body {
     font-size: 18px;
   }
-
+  
   .star {
     width: 60px;
   }
-
+  
   .vote__label {
     gap: 1.5em;
   }
@@ -247,11 +247,11 @@ button:hover {
   body {
     font-size: 16px;
   }
-
+  
   .star {
     width: 40px;
   }
-
+  
   .vote__label {
     gap: 1em;
   }
@@ -262,7 +262,7 @@ button:hover {
     grid-template-columns: 1fr;
     gap: 0.5em;
   }
-
+  
   .vote__button {
     width: 100%;
     margin-top: 2em;
