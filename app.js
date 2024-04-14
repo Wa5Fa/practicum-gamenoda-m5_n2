@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
 			voteRouteController(req, res);
 			break;
 		default:
-			defaultRouteController(req, url);
+			defaultRouteController(res, url);
 	}
 });
 
