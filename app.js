@@ -3,6 +3,8 @@ const path = require("path");
 const {voteRouteController, mainRouteController, gameRouteController} = require("./controllers/index");
 const {defaultRouteController} = require("./controllers");
 
+const PORT = 3005;
+
 const server = http.createServer((req, res) => {
 	const url = req.url;
 	switch (url) {
@@ -21,4 +23,4 @@ const server = http.createServer((req, res) => {
 	}
 });
 
-server.listen(3005, () => console.log("server was worked on PORT 3005"));
+server.listen(PORT, () => console.log(`✅ - http://localhost:${PORT}\nServer was worked on PORT ${PORT}.`));
