@@ -5,16 +5,25 @@ const parseBody = require("../appModules/http-utils/parse-body");
 const {config, createRating, updateRating} = require("../appModules/rating");
 const mimeTypes = require("../appModules/http-utils/mime-types");
 
+
 async function voteRouteController(req, res) {
 	if (req.method !== "POST") {
 		res.statusCode = 404;
-		res.end("Not Found");
+		res.end("Not Found!");
 	} else {
 		try {
 			res.statusCode = 200;
 			const body = await parseBody(req);
 			
-			const {default: chalk} = await import("chalk");
+			let chalk;
+			try {
+				// Use dynamic import to import chalk as an ES Module
+				const chalkModule = await import("chalk");
+				chalk = chalkModule.default;
+			} catch (error) {
+				// If dynamic import fails, fallback to requiring chalk as a CommonJS module
+				chalk = require("chalk");
+			}
 			const currentTime = moment().format("YYYY-MM-DD_HH:mm:ss.SSS");
 			console.info(
 				chalk.greenBright(`[${currentTime}]`),
