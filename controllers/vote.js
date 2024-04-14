@@ -3,7 +3,7 @@ const moment = require("moment");
 
 const parseBody = require("../appModules/http-utils/parse-body");
 const {config, createRating, updateRating} = require("../appModules/rating");
-const {mimeTypes} = require("../appModules/http-utils/mime-types");
+const mimeTypes = require("../appModules/http-utils/mime-types");
 
 async function voteRouteController(req, res) {
 	if (req.method !== "POST") {
