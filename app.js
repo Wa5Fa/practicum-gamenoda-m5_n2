@@ -1,7 +1,8 @@
 const http = require("http");
 const path = require("path");
-const {voteRouteController, mainRouteController, gameRouteController} = require("./controllers/index")
-const {staticFile, mimeTypes} = require("./appModules/http-utils/index")
+const {voteRouteController, mainRouteController, gameRouteController} = require("./controllers/index");
+const {staticFile, mimeTypes} = require("./appModules/http-utils/index");
+const {defaultRouteController} = require("./controllers");
 
 const server = http.createServer((req, res) => {
 	const url = req.url;
@@ -17,14 +18,7 @@ const server = http.createServer((req, res) => {
 			voteRouteController(req, res);
 			break;
 		default:
-			const extname = String(path.extname(url)).toLowerCase();
-			if (extname in mimeTypes) {
-				res.setHeader("Content-Type", mimeTypes[extname]);
-				staticFile(res, url, extname);
-			} else {
-				res.statusCode = 404;
-				res.end("Not Found");
-			}
+			defaultRouteController(req, url);
 	}
 });
 
