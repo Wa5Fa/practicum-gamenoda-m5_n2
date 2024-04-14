@@ -1,4 +1,3 @@
-// const PATH_TO_RATING_FILE = "./dataset/rating.json";
 const PATH_TO_RATING_FILE = "./dataset/rating.json";
 const WEIGHT = {
 	gameplay: 2,
